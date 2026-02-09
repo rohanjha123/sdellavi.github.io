@@ -2,6 +2,7 @@ baseURL = "https://sdellavi.github.io/"
 relativeURLs = true
 title = "Stefano DellaVigna"
 theme = "academimal"
+layoutDir = "layouts"
 sectionPagesMenu = "main"
 defaultContentLanguage = "en"
 ignorefiles = [ "hugo_travis_ci", ".travis.yml" ]

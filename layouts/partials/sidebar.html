@@ -1,10 +1,13 @@
 <p class="contactinfo"><a href="#bio">Bio</a></p>
-{{ with .Site.Data.working_papers }}
+{{ $workingPapers := readFile "content/working_papers.yaml" | transform.Unmarshal }}
+{{ with $workingPapers }}
 <p class="contactinfo"><a href="#workingpapers">Working Papers</a></p>
 {{ end }}
-{{ with .Site.Data.publications }}
+{{ $publications := readFile "content/publications.yaml" | transform.Unmarshal }}
+{{ with $publications }}
 <p class="contactinfo"><a href="#publications">Publications</a></p>
 {{ end }}
-{{ with .Site.Data.older_papers }}
+{{ $olderPapers := readFile "content/older_papers.yaml" | transform.Unmarshal }}
+{{ with $olderPapers }}
 <p class="contactinfo"><a href="#older_papers">Older Papers</a></p>
 {{ end }}

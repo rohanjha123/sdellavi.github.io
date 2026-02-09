@@ -7,36 +7,33 @@
 {{ $scratch := newScratch }}
 {{ $scratch.Set "pubcnt" 0 }}
 
-{{ with .Site.Data.working_papers }}
+{{ $workingPapers := readFile "content/working_papers.yaml" | transform.Unmarshal }}
+{{ with $workingPapers }}
 <hr>
 <h2 id="workingpapers">Working Papers</h2>
-{{ range . }}
 {{ range .works }}
 {{ partial "publication.html" (dict "context" . "pid" ($scratch.Get "pubcnt")) }}
 {{ $scratch.Add "pubcnt" 1 }}   
 {{ end }}
 {{ end }}
-{{ end }}
 
-{{ with .Site.Data.publications }}
+{{ $publications := readFile "content/publications.yaml" | transform.Unmarshal }}
+{{ with $publications }}
 <hr>
 <h2 id="publications">Publications</h2>
-{{ range . }}
 {{ range .works }}
 {{ partial "publication.html" (dict "context" . "pid" ($scratch.Get "pubcnt")) }}
 {{ $scratch.Add "pubcnt" 1 }}   
-{{ end }}
 {{ end }}
 {{ end }}
 
-{{ with .Site.Data.older_papers }}
+{{ $olderPapers := readFile "content/older_papers.yaml" | transform.Unmarshal }}
+{{ with $olderPapers }}
 <hr>
 <h2 id="older_papers">Older Papers</h2>
-{{ range . }}
 {{ range .works }}
 {{ partial "publication.html" (dict "context" . "pid" ($scratch.Get "pubcnt")) }}
 {{ $scratch.Add "pubcnt" 1 }}   
-{{ end }}
 {{ end }}
 {{ end }}
 
