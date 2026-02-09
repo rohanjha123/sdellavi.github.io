@@ -7,7 +7,7 @@ This guide explains the standard workflow for updating the website.
 - A standard computer with Terminal (or Command Prompt).
 - A code editor ([VS Code](https://code.visualstudio.com/) or similar).
 - [Git](https://git-scm.com/) and [Hugo](https://gohugo.io/) installed.
-- [GitHub Desktop](https://desktop.github.com/) (recommended).
+- [GitHub Desktop](https://desktop.github.com/) (recommended). 
 
 ## Where Things Live
 
