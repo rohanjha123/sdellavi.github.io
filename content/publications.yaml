@@ -2,7 +2,7 @@ works:
 - title: Policy Diffusion and Polarization across U.S. States
   pdflink: /pdf/PolicyDiffusion2025-05-12.pdf
   coauthors: Woojin Kim
-  book: The Review of Economic Studies, forthcoming.
+  book: The Review of Economic Studies, May 2026, Vol. 93, pp. 1602-1634.
   abstract: >
     Economists have studied the impact of numerous state laws, from welfare rules to voting ID requirements. Yet for all this policy evaluation, what do we know about policy diffusion—how these policies are introduced and spread from state to state? We present a series of facts based on a data set of 602 U.S. state policies spanning the past 7 decades. First, proxies of state capacity do not predict a higher likelihood of innovating new policies, but the political leaning of the state does predict a higher likelihood of introducing partisan laws since 1990. Second, the diffusion of policies from 1950 to 2000 is best predicted by proximity—a state is more likely to adopt a policy if nearby states have already done so—as well as similarity in voter policy preferences. Third, since 2000, party alignment has become the strongest predictor of diffusion, and the speed of adoption has increased. Models of learning and correlated preferences can account for the earlier patterns, but the findings for the last two decades indicate a sharply increasing role of party control. We conclude that party polarization has emerged as a key factor recently for policy adoption, plausibly leading to a worse match between state policies and voter preferences.
 - title: Bottlenecks for Evidence Adoption
@@ -311,6 +311,7 @@ works:
     text: Online Appendix
   - url: /pdf/NineFactsTopJournalsUpdate2018.pdf
     text: Update to "Nine Facts about Top Journals in Economics" (4/2018)
+  url: /datacode/card-dellavigna-top5-jet.zip
   abstract: >
     How has publishing in top economics journals changed since 1970? Using a data set
     that combines information on all articles published in the top-five journals from 1970
